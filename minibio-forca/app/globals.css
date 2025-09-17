@@ -41,10 +41,3 @@ a {
     color-scheme: dark;
   }
 }
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%; 
-    padding: 3px;  
-  }
-}
