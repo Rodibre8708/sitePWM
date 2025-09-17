@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Currículo",
-  description: "Currículo",
+  title: "Currículo Forca",
+  description: "Currículo Forca",
 };
 
 export default function RootLayout({ children }) {

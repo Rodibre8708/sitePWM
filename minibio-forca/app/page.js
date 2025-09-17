@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -80,6 +81,13 @@ export default function Home() {
         - Espanhol básico
       </p>
       <br />
+      <h2>Jogo da Forca</h2>
+      <p>
+        Se você chegou até aqui, clique no botão para jogar!
+      </p>
+      <Link href="/Forca">
+        <button> Jogo da Forca</button>
+      </Link>
     </>
   );
 }
