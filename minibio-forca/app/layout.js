@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mini Bio do pai",
-  description: "Feita pela fera",
+  title: "Currículo",
+  description: "Currículo",
 };
 
 export default function RootLayout({ children }) {
