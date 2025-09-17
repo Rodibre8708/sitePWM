@@ -15,7 +15,7 @@ export default function Home() {
         />
         <ol>
           <li>
-            Get started by editing <code>app/page.js</code>.
+            Sport maior time do mundo
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
