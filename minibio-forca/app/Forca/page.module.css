@@ -1,0 +1,132 @@
+.forcaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  min-height: 100vh;
+  gap: 20px;
+  text-align: left;
+}
+
+.forcaContainer * {
+  max-width: none; /* remove a limitação de 60vw para os elementos internos */
+}
+
+.botoesNavegacao {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.botaoVoltar,
+.botaoReiniciarMeio,
+.botaoReiniciarFinal {
+  font-size: 1rem;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.botaoVoltar:hover,
+.botaoReiniciarMeio:hover,
+.botaoReiniciarFinal:hover {
+  background-color: #0056b3;
+}
+
+.forcaSvg {
+  width: 150px;
+  height: 180px;
+  stroke: var(--foreground);
+  stroke-width: 3;
+  stroke-linecap: round;
+  fill: none;
+  margin: 20px 0;
+}
+
+.forcaEixo {
+  stroke: var(--foreground);
+}
+
+.palavraExibida {
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.tentativasRestantes {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: var(--foreground);
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+  gap: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.botaoLetra {
+  width: 100%;
+  height: 45px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--foreground);
+  color: var(--background);
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.botaoLetra:hover:not(:disabled) {
+  background-color: #666;
+  transform: translateY(-2px);
+}
+
+.botaoLetra:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.mensagemVitoria {
+  color: #28a745;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  animation: pulsoVitoria 1s infinite;
+}
+
+.mensagemDerrota {
+  color: #dc3545;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.palavraFinal {
+  font-weight: bold;
+  color: var(--foreground);
+}
+
+.botaoReiniciarFinal {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.botaoReiniciarFinal:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+@keyframes pulsoVitoria {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
