@@ -12,7 +12,6 @@
 
 html,
 body {
-  max-width: 60vw;
   overflow-x: hidden;
   text-align: justify;
 }
@@ -27,6 +26,7 @@ body {
 
 * {
   box-sizing: border-box;
+  max-width: 60vw;
   padding: 3px;
   margin: 0;
 }
