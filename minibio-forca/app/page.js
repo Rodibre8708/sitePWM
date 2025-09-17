@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
     <>
       <h1>Meu currículo</h1>
       <br />
-      <a href="https://github.com/Rodibre8708" target="_blank">
+      <a href="https://github.com/Rodibre8708" target="_blank" className={styles.linkDestaque}>
         Perfil no GitHub
       </a>
       <br />
-      <a href="https://www.linkedin.com/in/rodrigo-victor-beltr%C3%A3o-419713327/" target="_blank">
+      <a href="https://www.linkedin.com/in/rodrigo-victor-beltr%C3%A3o-419713327/" target="_blank" className={styles.linkDestaque}>
         Perfil no LinkedIn
       </a>
       <p>
@@ -86,7 +87,7 @@ export default function Home() {
         Se você chegou até aqui, clique no botão para jogar!
       </p>
       <Link href="/Forca">
-        <button> Jogo da Forca</button>
+        <button className={styles.botaoInicial}>Jogo da Forca</button>
       </Link>
     </>
   );

@@ -76,8 +76,11 @@ const Forca = () => {
     } else if (statusJogo === 'perdeu') {
       return (
         <h2 className={styles.mensagemDerrota}>
-          VOCÊ PERDEU! A palavra era: <span className={styles.palavraFinal}>{palavra}</span>
-        </h2>
+        VOCÊ PERDEU!{' '}
+        <span style={{ color: 'var(--foreground)' }}>
+          A palavra era: <span className={styles.palavraFinal}>{palavra}</span>
+        </span>
+      </h2>
       );
     }
     return <p className={styles.tentativasRestantes}>Tentativas restantes: {MAX_ERROS - erros}</p>;
@@ -101,9 +104,6 @@ const Forca = () => {
         <Link href="/">
           <button className={styles.botaoVoltar}>Voltar para o Início</button>
         </Link>
-        <button onClick={iniciarNovoJogo} className={styles.botaoReiniciarMeio}>
-          Reiniciar Jogo
-        </button>
       </div>
 
       <h1 className={styles.titulo}>Jogo da Forca</h1>

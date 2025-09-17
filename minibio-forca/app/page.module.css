@@ -1,0 +1,28 @@
+.botaoInicial {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botaoInicial:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+
+.linkDestaque {
+  transition: color 0.3s ease-in-out;
+  text-decoration: none; /* remove o sublinhado padrão do link */
+  color: #ffffff; /* cor azul para indicar link, ou use a cor que preferir */
+}
+
+.linkDestaque:hover {
+  color: #c2c2c2; /* Cor mais escura para o efeito de hover */
+}
