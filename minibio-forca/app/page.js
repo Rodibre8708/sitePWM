@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <h1>Esta é a minha Mini Bio</h1>
+      <h1>Mini Bio de Rodrigo Victor Beltrão</h1>
       <br />
       <a href="https://github.com/Rodibre8708" target="_blank">
         Meu GitHub
