@@ -27,7 +27,7 @@ body {
 
 * {
   box-sizing: border-box;
-  padding-left: 5px;
+  padding: 3px;
   margin: 0;
 }
 
@@ -39,5 +39,12 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; 
+    padding: 3px;  
   }
 }
