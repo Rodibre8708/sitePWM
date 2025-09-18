@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from 'react';
-import Link from 'next/link'; // Importado para o botão de voltar
+import Link from 'next/link'; 
 import styles from './page.module.css';
 
 const PALAVRAS = [
@@ -13,12 +13,12 @@ const PALAVRAS = [
 ];
 
 const FORCA_PARTES = [
-  <circle key="cabeca" cx="120" cy="60" r="20" />,          // Cabeça (0 erros)
-  <line key="tronco" x1="120" y1="80" x2="120" y2="130" />, // Tronco (1 erro)
-  <line key="bracoEsq" x1="120" y1="90" x2="100" y2="120" />, // Braço esquerdo (2 erros)
-  <line key="bracoDir" x1="120" y1="90" x2="140" y2="120" />, // Braço direito (3 erros)
-  <line key="pernaEsq" x1="120" y1="130" x2="100" y2="160" />, // Perna esquerda (4 erros)
-  <line key="pernaDir" x1="120" y1="130" x2="140" y2="160" />  // Perna direita (5 erros)
+  <circle key="cabeca" cx="120" cy="60" r="20" />,          
+  <line key="tronco" x1="120" y1="80" x2="120" y2="130" />, 
+  <line key="bracoEsq" x1="120" y1="90" x2="100" y2="120" />, 
+  <line key="bracoDir" x1="120" y1="90" x2="140" y2="120" />, 
+  <line key="pernaEsq" x1="120" y1="130" x2="100" y2="160" />, 
+  <line key="pernaDir" x1="120" y1="130" x2="140" y2="160" />  
 ];
 
 const MAX_ERROS = FORCA_PARTES.length;
@@ -27,7 +27,7 @@ const Forca = () => {
   const [palavra, setPalavra] = useState('');
   const [letrasTentadas, setLetrasTentadas] = useState(new Set());
   const [erros, setErros] = useState(0);
-  const [statusJogo, setStatusJogo] = useState('jogando'); // 'jogando', 'venceu', 'perdeu'
+  const [statusJogo, setStatusJogo] = useState('jogando'); 
 
   const alfabeto = useMemo(() => "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""), []);
 
@@ -61,7 +61,7 @@ const Forca = () => {
   };
 
   useEffect(() => {
-    if (!palavra) return; // Evita que a verificação rode antes de a palavra ser definida
+    if (!palavra) return; 
 
     if (erros >= MAX_ERROS) {
       setStatusJogo('perdeu');
@@ -102,7 +102,7 @@ const Forca = () => {
     <main className={styles.forcaContainer}>
       <div className={styles.botoesNavegacao}>
         <Link href="/">
-          <button className={styles.botaoVoltar}>Voltar para o Início</button>
+          <button className={styles.botaoVoltar}>Voltar para o Currículo</button>
         </Link>
       </div>
 

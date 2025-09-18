@@ -19,10 +19,10 @@
 
 .linkDestaque {
   transition: color 0.3s ease-in-out;
-  text-decoration: none; /* remove o sublinhado padrão do link */
-  color: #ffffff; /* cor azul para indicar link, ou use a cor que preferir */
+  text-decoration: none; 
+  color: #ffffff; 
 }
 
 .linkDestaque:hover {
-  color: #c2c2c2; /* Cor mais escura para o efeito de hover */
+  color: #c2c2c2; 
 }
